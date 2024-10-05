@@ -1,9 +1,9 @@
-import ForceToUpdate from "./components/animations/force-to-update";
+import AppLifeCycles from "./components/life-sycles/app-lifeCycles";
 
 const App = () => {
   return (
     <>
-      <ForceToUpdate />
+      <AppLifeCycles />
     </>
   );
 };
