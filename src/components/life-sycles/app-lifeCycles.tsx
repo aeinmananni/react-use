@@ -1,5 +1,5 @@
 import { CSSProperties, useState } from "react";
-import { useMount } from "react-use";
+import { useMount, useUnmount } from "react-use";
 
 type ColorBoxProps = {
   backColor?: string;
@@ -18,16 +18,21 @@ const ColorBox = ({ backColor, onMessage }: ColorBoxProps) => {
   useMount(() => {
     onMessage(`${backColorClass} box Mounted`);
   });
+  useUnmount(() => {
+    onMessage(`${backColorClass} box UUNMounted`);
+  });
   return <div style={boxStyle}></div>;
 };
 
 const AppLifeCycles = () => {
   const [message, setMessage] = useState<string>("");
+  const [toggle, setToggle] = useState<boolean>(false);
   return (
     <div>
       <p>{message}</p>
+      <button onClick={() => setToggle((c) => !c)}>On Toggle Color Box</button>
       {/* {<ColorBox onMessage={setMessage} backColor="orange" />} */}
-      {<ColorBox onMessage={setMessage} />}
+      {toggle && <ColorBox onMessage={setMessage} />}
     </div>
   );
 };
