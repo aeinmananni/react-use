@@ -1,5 +1,5 @@
 import { CSSProperties, useState } from "react";
-import { useMount, useUnmount } from "react-use";
+import { useMount, useUnmount, useLifecycles } from "react-use";
 
 type ColorBoxProps = {
   backColor?: string;
@@ -15,12 +15,21 @@ const ColorBox = ({ backColor, onMessage }: ColorBoxProps) => {
     height: 200,
   };
 
-  useMount(() => {
-    onMessage(`${backColorClass} box Mounted`);
-  });
-  useUnmount(() => {
-    onMessage(`${backColorClass} box UUNMounted`);
-  });
+  // useMount(() => {
+  //   onMessage(`${backColorClass} box Mounted`);
+  // });
+  // useUnmount(() => {
+  //   onMessage(`${backColorClass} box UUNMounted`);
+  // });
+
+  useLifecycles(
+    () => {
+      onMessage(`${backColorClass} box Mounted`);
+    },
+    () => {
+      onMessage(`${backColorClass} box UUNMounted`);
+    }
+  );
   return <div style={boxStyle}></div>;
 };
 
