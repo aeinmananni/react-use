@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { CSSProperties, useState } from "react";
-import { useMount, useUnmount, useLifecycles } from "react-use";
+import { useLifecycles } from "react-use";
 
 type ColorBoxProps = {
   backColor?: string;
