@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { CSSProperties, useState } from "react";
-import { useLifecycles } from "react-use";
+import { useLifecycles, useEffectOnce } from "react-use";
 
 type ColorBoxProps = {
   backColor?: string;
@@ -23,14 +23,18 @@ const ColorBox = ({ backColor, onMessage }: ColorBoxProps) => {
   //   onMessage(`${backColorClass} box UUNMounted`);
   // });
 
-  useLifecycles(
-    () => {
-      onMessage(`${backColorClass} box Mounted`);
-    },
-    () => {
-      onMessage(`${backColorClass} box UUNMounted`);
-    }
-  );
+  // useLifecycles(
+  //   () => {
+  //     onMessage(`${backColorClass} box Mounted`);
+  //   },
+  //   () => {
+  //     onMessage(`${backColorClass} box UUNMounted`);
+  //   }
+  // );
+  useEffectOnce(() => {
+    onMessage(`${backColorClass} box Mounted`);
+    return () => onMessage(`${backColorClass} box UUNMounted`);
+  });
   return <div style={boxStyle}></div>;
 };
 
