@@ -1,9 +1,9 @@
-import AppLifeCycles from "./components/life-sycles/app-lifeCycles";
+import LocalStorage from "./components/side-effects/local-storage";
 
 const App = () => {
   return (
     <>
-      <AppLifeCycles />
+      <LocalStorage />
     </>
   );
 };
