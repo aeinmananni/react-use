@@ -1,9 +1,9 @@
-import LocalStorage from "./components/side-effects/local-storage";
+import ClipBoard from "./components/side-effects/clip-board";
 
 const App = () => {
   return (
     <>
-      <LocalStorage />
+      <ClipBoard />
     </>
   );
 };
