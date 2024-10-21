@@ -1,9 +1,9 @@
-import ClipBoard from "./components/side-effects/clip-board";
+import PageTitle from "./components/side-effects/page-title";
 
 const App = () => {
   return (
     <>
-      <ClipBoard />
+      <PageTitle />
     </>
   );
 };
