@@ -1,9 +1,9 @@
-import PageTitle from "./components/side-effects/page-title";
+import PageIcon from "./components/side-effects/page-icon";
 
 const App = () => {
   return (
     <>
-      <PageTitle />
+      <PageIcon />
     </>
   );
 };
