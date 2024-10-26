@@ -1,9 +1,9 @@
-import PageIcon from "./components/side-effects/page-icon";
+import CookieManager from "./components/side-effects/cookie-manager";
 
 const App = () => {
   return (
     <>
-      <PageIcon />
+      <CookieManager />
     </>
   );
 };
