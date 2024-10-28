@@ -1,9 +1,8 @@
-import CookieManager from "./components/side-effects/cookie-manager";
-
+import CallAsync from "./components/side-effects/callAsync";
 const App = () => {
   return (
     <>
-      <CookieManager />
+      <CallAsync />
     </>
   );
 };
