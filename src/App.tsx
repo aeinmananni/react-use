@@ -1,8 +1,8 @@
-import CallAsync from "./components/side-effects/callAsync";
+import MemoizedValue from "./components/states/memoized-value";
 const App = () => {
   return (
     <>
-      <CallAsync />
+      <MemoizedValue />
     </>
   );
 };
