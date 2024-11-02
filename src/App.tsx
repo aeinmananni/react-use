@@ -1,8 +1,8 @@
-import MemoizedValue from "./components/states/memoized-value";
+import DefaultValue from "./components/states/default-value";
 const App = () => {
   return (
     <>
-      <MemoizedValue />
+      <DefaultValue />
     </>
   );
 };
