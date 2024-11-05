@@ -1,8 +1,8 @@
-import DefaultValue from "./components/states/default-value";
+import NumberCounter from "./components/states/number-counter";
 const App = () => {
   return (
     <>
-      <DefaultValue />
+      <NumberCounter />
     </>
   );
 };
