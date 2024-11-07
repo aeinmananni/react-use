@@ -1,8 +1,8 @@
-import NumberCounter from "./components/states/number-counter";
+import ToggleValue from "./components/states/taggle_value";
 const App = () => {
   return (
     <>
-      <NumberCounter />
+      <ToggleValue />
     </>
   );
 };
