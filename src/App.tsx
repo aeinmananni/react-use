@@ -1,8 +1,8 @@
-import ToggleValue from "./components/states/taggle_value";
+import FirstRender from "./components/states/first-render";
 const App = () => {
   return (
     <>
-      <ToggleValue />
+      <FirstRender />
     </>
   );
 };
