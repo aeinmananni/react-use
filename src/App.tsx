@@ -1,8 +1,8 @@
-import FirstRender from "./components/states/first-render";
+import TrackObjectValue from "./components/states/track-object-value";
 const App = () => {
   return (
     <>
-      <FirstRender />
+      <TrackObjectValue />
     </>
   );
 };
