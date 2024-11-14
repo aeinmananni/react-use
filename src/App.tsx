@@ -1,8 +1,8 @@
-import TrackObjectValue from "./components/states/track-object-value";
+import StateValidator from "./components/states/state-validator";
 const App = () => {
   return (
     <>
-      <TrackObjectValue />
+      <StateValidator />
     </>
   );
 };
