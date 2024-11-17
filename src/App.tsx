@@ -1,8 +1,8 @@
-import StateValidator from "./components/states/state-validator";
+import MultiStateValidator from "./components/states/state-validator";
 const App = () => {
   return (
     <>
-      <StateValidator />
+      <MultiStateValidator />
     </>
   );
 };
