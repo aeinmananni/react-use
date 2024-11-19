@@ -1,8 +1,9 @@
-import MultiStateValidator from "./components/states/state-validator";
+import PreviousState from "./components/states/previous-state";
+
 const App = () => {
   return (
     <>
-      <MultiStateValidator />
+      <PreviousState />
     </>
   );
 };
