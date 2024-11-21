@@ -1,9 +1,9 @@
-import PreviousState from "./components/states/previous-state";
+import ListManager from "./components/states/list-manager";
 
 const App = () => {
   return (
     <>
-      <PreviousState />
+      <ListManager />
     </>
   );
 };
