@@ -1,9 +1,9 @@
-import ListManager from "./components/states/list-manager";
+import SetManager from "./components/states/set-manager";
 
 const App = () => {
   return (
     <>
-      <ListManager />
+      <SetManager />
     </>
   );
 };
