@@ -1,9 +1,9 @@
-import SetManager from "./components/states/set-manager";
+import QueueManager from "./components/states/queue-manager";
 
 const App = () => {
   return (
     <>
-      <SetManager />
+      <QueueManager />
     </>
   );
 };
