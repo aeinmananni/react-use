@@ -52,3 +52,27 @@ export default tseslint.config({
  ##  react-use provides a collection of well-tested and reusable React hooks that help simplify ## component logic, reduce boilerplate code, and improve overall readability.
 ## By leveraging TypeScript, the hooks are fully type-safe, allowing potential runtime errors to ## be caught during development.
 ## This combination results in cleaner, more maintainable, and more predictable code.
+
+git remote set-url origin git@github.com:username/repo.git
+
+PS D:\folder-react-js\react-use> ssh-keygen -t ed25519 -C "mananniaein1234@gmail.com"
+Generating public/private ed25519 key pair.
+
+Enter
+
+Enter
+
+Enter
+
+توی پاورشل اینو زدم 
+type $env:USERPROFILE\.ssh\id_ed25519.pub
+
+اینو بهم داد
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIIlF5lf0a6XqrxM+uQEP84qXXyBmVnfArIddPntwULT mananniaein1234@gmail.com
+
+توی گیت ها
+Add new SSH Key
+
+my window laptop
+git config --global ssh.postBuffer 524288000
+git config --global core.compression 9
