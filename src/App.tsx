@@ -1,6 +1,6 @@
 // import { AudioPlayerCustom, AudioPlayer } from "./components/UI/audio-player";
 // import { ClickOutSide } from "./components/UI/click-outside";
-import { ClickOutSideCustom } from "./components/UI/click-outside";
+// import { ClickOutSideCustom } from "./components/UI/click-outside";
 // import { FullScreen } from "./components/UI/full-screen";
 // import { FullScreenCustom } from "./components/UI/full-screen";
 // import { Slider } from "./components/UI/slider";
@@ -32,8 +32,12 @@ import { ClickOutSideCustom } from "./components/UI/click-outside";
 // } from './components/states/multi-state-validator';
 
 // import { PreviousStateCustom } from './components/states/previous-state';
+// import {
+//   QueueManager,
+//   QueueManagerCustom,
+// } from "./components/states/QueueManager";
 const App = () => {
-  return <ClickOutSideCustom />;
+  return <>React use Cutom Hooks</>;
 };
 
 export default App;
